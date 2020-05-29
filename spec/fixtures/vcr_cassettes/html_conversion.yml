@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/convert/html
+    body:
+      encoding: UTF-8
+      string: "-------------RubyMultipartPost-e708789714baca5b4aaf24b525532011\r\nContent-Disposition:
+        form-data; name=\"files[]\"; filename=\"index.html\"\r\nContent-Length: 50\r\nContent-Type:
+        text/html\r\nContent-Transfer-Encoding: binary\r\n\r\n<html><head><title>Some
+        data</title></head></html>\r\n-------------RubyMultipartPost-e708789714baca5b4aaf24b525532011--\r\n"
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Content-Type:
+      - multipart/form-data; boundary=-----------RubyMultipartPost-e708789714baca5b4aaf24b525532011
+      Content-Length:
+      - '337'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Disposition:
+      - attachment; filename="t4rJICpXVJ24N8iWxFSIeCJLs31qfEim.pdf"
+      Content-Length:
+      - '919'
+      Content-Type:
+      - application/pdf
+      Last-Modified:
+      - Fri, 29 May 2020 03:07:04 GMT
+      Date:
+      - Fri, 29 May 2020 03:07:04 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PC9DcmVhdG9yIChDaHJvbWl1bSkKL1Byb2R1Y2VyIChTa2lhL1BERiBtODApCi9DcmVhdGlvbkRhdGUgKEQ6MjAyMDA1MjkwMzA3MDQrMDAnMDAnKQovTW9kRGF0ZSAoRDoyMDIwMDUyOTAzMDcwNCswMCcwMCcpPj4KZW5kb2JqCjMgMCBvYmoKPDwvY2EgMQovQk0gL05vcm1hbD4+CmVuZG9iago0IDAgb2JqCjw8L0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxNDQ+PiBzdHJlYW0KeJyFjUsOwjAMRPc+hddIGH/SJD5B17DhAAi6Aqnl/hJOKtSywiNLmSQzj9S8D3LoSDtbk5CLe8XbE2Zo75oqow3suNzhesBX3CeSHF/L2vDrIijYdBlxPSwTnEbD6d37ihuKqLa6B5xDMxgHIlZq8SjLA6pzoZql7qhGormYSeds7pv+R84s6MYb+AOmHDU8CmVuZHN0cmVhbQplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlCi9SZXNvdXJjZXMgPDwvUHJvY1NldCBbL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSV0KL0V4dEdTdGF0ZSA8PC9HMyAzIDAgUj4+Pj4KL01lZGlhQm94IFswIDAgNTk0Ljk1OTk2IDg0MS45MTk5OF0KL0NvbnRlbnRzIDQgMCBSCi9TdHJ1Y3RQYXJlbnRzIDAKL1BhcmVudCA1IDAgUj4+CmVuZG9iago1IDAgb2JqCjw8L1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFsyIDAgUl0+PgplbmRvYmoKNiAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyA1IDAgUj4+CmVuZG9iagp4cmVmCjAgNwowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDQwNSAwMDAwMCBuIAowMDAwMDAwMTU0IDAwMDAwIG4gCjAwMDAwMDAxOTEgMDAwMDAgbiAKMDAwMDAwMDYwNSAwMDAwMCBuIAowMDAwMDAwNjYwIDAwMDAwIG4gCnRyYWlsZXIKPDwvU2l6ZSA3Ci9Sb290IDYgMCBSCi9JbmZvIDEgMCBSPj4Kc3RhcnR4cmVmCjcwNwolJUVPRg==
+    http_version: null
+  recorded_at: Fri, 29 May 2020 03:07:04 GMT
+recorded_with: VCR 5.1.0

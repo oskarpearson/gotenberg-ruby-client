@@ -1,6 +1,12 @@
+# frozen_string_literal: true
+
+require "faraday"
+
 require "gotenberg/version"
 
-module Gotenberg
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require "gotenberg/asset"
+require "gotenberg/client"
+require "gotenberg/response"
+
+require "gotenberg/content/base"
+require "gotenberg/content/html"
